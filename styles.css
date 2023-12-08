@@ -12,3 +12,65 @@
     background: #CC0000;
 }
 }*/
+
+.content{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #000000;
+}
+
+.header, .article, .aside, .footer{
+    padding: 20px;
+    
+}
+
+.header{
+    background: #666600;
+    flex-basis: 60px;
+}
+
+.article{
+    background: #999900;
+    flex-basis: 300px;
+    flex-grow: 2;
+    flex-shrink: 0;
+}
+
+.aside{
+    background: #cccc00;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.footer{
+    background: #ffff00;
+    flex-grow: 1;
+}
+
+
+
+
+@media screen and (min-width:  700px){
+.content{
+display: grid;
+grid-template-rows: 80px 1fr 1fr 1fr 1fr 80px;
+grid-template-columns: repeat(3,1fr);
+
+}
+.article{
+    grid-row: 2 / 6;
+    grid-column: 1 / span 2;
+}
+
+.aside{
+grid-row: 2 / 6;
+}
+.header{
+    grid-column: 1 / span 3;
+}
+.footer{
+    grid-row: 6 / 7;
+    grid-column: 1 / span 3;
+}
+}
