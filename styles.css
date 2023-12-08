@@ -1,0 +1,14 @@
+/*body{
+    background: radial-gradient(circle,#FFFFCC,#CC9966);
+}
+
+.div-responsive{
+    background: #FF0066;
+}
+
+
+@media screen and (min-width: 400px) AND (max-width: 600px){
+.div-responsive{
+    background: #CC0000;
+}
+}*/
